@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: "Netflix Sans";
+  src: url("./Netflix Sans-fontiko/NetflixSans-Regular.otf") format("opentype")
+}
+
+@font-face{
+  font-family: "Netflix Sans";
+  src: url("./Netflix Sans-fontiko/NetflixSans-Bold.otf");
+  font-weight: 700;
+}
+
+body{
+  background: #141414;
+  padding: 2em;
+  font-family:"Netflix Sans";
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.browse__items{
+  font-size: clamp(0.688rem, 2vw, 0.9rem);
+  transition: all 0s
+}
+
+.browse__items:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.browse__items::selection{
+  font-weight: bold;
+}
+
+img{
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.nav{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+}
+
+.netflix{
+  max-width: 140px;
+
+}
+
+.profile-card{
+  width: clamp(40px, 2.5vw, 50px);
+  border-radius: 5px;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.browse{
+  display: flex;
+  flex-grow: 1;
+  gap: 30px;
+  
+}
+
+.dropdown{
+  max-width: 15px;
+}
+
