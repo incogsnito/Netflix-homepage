@@ -106,6 +106,10 @@ img{
   gap: 30px;
   margin-bottom: 20px;
   flex-shrink: 0;
+  overflow-x: scroll;
+}
+.section__rows::-webkit-scrollbar{
+  display: none;
 }
 
 .section__rows--cards{
@@ -118,5 +122,5 @@ img{
 
 .section__rows--cards:hover{
   cursor: pointer;
-  opacity: 0.7
+  opacity: 0.7;
 }
