@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root{
+  --netflix: url("");
+}
+
 @font-face{
   font-family: "Netflix Sans";
   src: url("./Netflix Sans-fontiko/NetflixSans-Regular.otf") format("opentype")
@@ -17,11 +21,16 @@
 
 body{
   background: #141414;
-  padding: 2em;
+  padding: 2em ;
   font-family:"Netflix Sans";
   color: white;
   margin: 0;
   line-height: 1.2;
+}
+
+.container{
+  width: 95%;
+
 }
 
 .browse__items{
@@ -41,15 +50,21 @@ body{
 img{
   max-width: 100%;
   object-fit: contain;
+
 }
 
 .nav{
   display: flex;
+  width: 100%;
   gap: 30px;
   align-items: center;
+  overflow-x:scroll;
 
 }
 
+.nav::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
 .netflix{
   max-width: 140px;
 
@@ -66,6 +81,7 @@ img{
   gap: 20px;
   justify-content: flex-end;
   flex-grow: 1;
+  margin-left: 2em;
 }
 
 .browse{
@@ -79,3 +95,28 @@ img{
   max-width: 15px;
 }
 
+/* Section */
+
+.section{
+  margin-top: 30px;
+}
+
+.section__rows{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.section__rows--cards{
+  width: 100%;
+  max-width: 350px;
+  border: none;
+  content: url("./netflix-img/images/Neon-Season-1.webp");
+  transition: 0s linear;
+}
+
+.section__rows--cards:hover{
+  cursor: pointer;
+  opacity: 0.7
+}
