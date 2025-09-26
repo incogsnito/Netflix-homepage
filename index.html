@@ -8,30 +8,62 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <div class="container">
-    <nav class="nav">
-      <img src="./netflix-img/images/logo.png" alt="Netflix logo" class="netflix">
-      <div class="browse">
-        <p class="browse__items">Home</p>
-        <p class="browse__items">Shows</p>
-        <p class="browse__items">Movies</p>
-        <p class="browse__items">Games</p>
-        <p class="browse__items">New & Popular</p>
-        <p class="browse__items">My List</p>
-        <p class="browse__items">Browse by Languages</p>
-      </div>
-      <div class="icons">
-        <i class="fa-solid fa-magnifying-glass icon"></i>
-        <p>Kids</p>
-        <i class="fa-regular fa-bell icon"></i>
-        <img src="./netflix-img/images/Netflix-avatar.png" alt="profile-card" class="profile-card">
-        <img src="./netflix-img/images/down-icon.png" alt="dropdown icon" class="dropdown">
-      </div>
-    </nav>
+  <header>
+    <div class="hero__container">
 
-    <section class="section">
+       <nav class="nav">
+        <img src="./netflix-img/images/logo.png" alt="Netflix logo" class="netflix">
+        <div class="browse">
+          <p class="browse__items">Home</p>
+          <p class="browse__items">Shows</p>
+          <p class="browse__items">Movies</p>
+          <p class="browse__items">Games</p>
+          <p class="browse__items">New & Popular</p>
+          <p class="browse__items">My List</p>
+          <p class="browse__items">Browse by Languages</p>
+        </div>
+
+          <div class="icons">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            <p>Kids</p>
+            <i class="fa-regular fa-bell icon"></i>
+            <img src="./netflix-img/images/Netflix-avatar.png" alt="profile-card" class="profile-card">
+            <img src="./netflix-img/images/down-icon.png" alt="dropdown icon" class="dropdown">
+          </div>
+      </nav>
+      <div class="hero__img">
+        <img src="./netflix-img/images/AAAABWP8NRT0P93-qMu2HLVL9eeyM1MpdXN6pIs9UlE28NsrQzNr80TmnnKuauPFBiu7GcLRBfcs37yrlVB02ZQiBqkTLyz4tckoZmf57-8iowHa.webp" alt="" class="img__title">
+        <p class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officia minus nihil non debitis. Quibusdam voluptatibus aperiam quisquam natus quos ducimus, vitae recusandae doloribus repudiandae libero illo quaerat enim alias!</p>
+        <div>
+          <a class="btn btn__1"href="#">
+            Play
+          </a>
+          <a  class="btn btn__2" href="#">
+            More Info
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+    <div class="container">
+
+    
+
+      <section class="section">
+          <div class="rows">
+            <h2>Popular on Netflix</h2>
+            <div class="section__rows">
+              <div class="section__rows--cards"></div>
+              <div class="section__rows--cards"></div>
+              <div class="section__rows--cards"></div>
+              <div class="section__rows--cards"></div>
+              <div class="section__rows--cards"></div>
+            </div>
+          </div>
         <div class="rows">
-          <h2>Popular on Netflix</h2>
+          <h2>Trending Now
+          </h2>
           <div class="section__rows">
             <div class="section__rows--cards"></div>
             <div class="section__rows--cards"></div>
@@ -40,79 +72,69 @@
             <div class="section__rows--cards"></div>
           </div>
         </div>
-      <div class="rows">
-        <h2>Trending Now
-        </h2>
-        <div class="section__rows">
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
+        <div class="rows">
+          <h2>Continue watching
+          </h2>
+          <div class="section__rows">
+            <div class="section__rows--cards"></div>
+            <div class="section__rows--cards"></div>
+            <div class="section__rows--cards"></div>
+            <div class="section__rows--cards"></div>
+            <div class="section__rows--cards"></div>
+          </div>
         </div>
-      </div>
-      <div class="rows">
-        <h2>Continue watching
-        </h2>
-        <div class="section__rows">
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
+        <div class="rows">
+          <h2>Because you watched</h2>
+          <div class="section__rows">
+            <div class="section__rows--cards"></div>
+            <div class="section__rows--cards"></div>
+            <div class="section__rows--cards"></div>
+            <div class="section__rows--cards"></div>
+            <div class="section__rows--cards"></div>
+          </div>
         </div>
-      </div>
-      <div class="rows">
-        <h2>Because you watched</h2>
-        <div class="section__rows">
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
-          <div class="section__rows--cards"></div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="footer">
-      <div class="socials">
-        <i class="fa-brands fa-facebook fa-2x"></i>
-        <i class="fa-brands fa-instagram fa-2x"></i>
-        <i class="fa-brands fa-youtube fa-2x"></i>
-        <i class="fa-brands fa-twitter fa-2x"></i>
-      </div>
-
-      <div class="info">
-        <div class="info__row">
-          <p>Audio Description</p>
-          <p>Investor Relations</p>
-          <p>Privacy</p>
-          <p>Contact Us</p>
+      <footer class="footer">
+        <div class="socials">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+          <i class="fa-brands fa-instagram fa-2x"></i>
+          <i class="fa-brands fa-youtube fa-2x"></i>
+          <i class="fa-brands fa-twitter fa-2x"></i>
         </div>
 
-         <div class="info__row">
-          <p>Help Center</p>
-          <p>Jobs</p>
-          <p>Legal Notices</p>
-          <p>Do Not Sell or Share My Personal Information</p>
-        </div>
+        <div class="info">
+          <div class="info__row">
+            <p>Audio Description</p>
+            <p>Investor Relations</p>
+            <p>Privacy</p>
+            <p>Contact Us</p>
+          </div>
 
-         <div class="info__row">
-          <p>Gift Cards</p>
-          <p>Netflix Shop</p>
-          <p>Cookie Preferences</p>
-          <p>Ad Choices</p>
-        </div>
+          <div class="info__row">
+            <p>Help Center</p>
+            <p>Jobs</p>
+            <p>Legal Notices</p>
+            <p>Do Not Sell or Share My Personal Information</p>
+          </div>
 
-         <div class="info__row">
-          <p>Media Center</p>
-          <p>Terms of Use</p>
-          <p>Corporate Information</p>
-          <p>Corporate information</p>
-        </div>
+          <div class="info__row">
+            <p>Gift Cards</p>
+            <p>Netflix Shop</p>
+            <p>Cookie Preferences</p>
+            <p>Ad Choices</p>
+          </div>
 
-      </div>
-    </footer>
+          <div class="info__row">
+            <p>Media Center</p>
+            <p>Terms of Use</p>
+            <p>Corporate Information</p>
+            <p>Corporate information</p>
+          </div>
+
+        </div>
+      </footer>
+    </div>
   </div>
 </body>
 </html>

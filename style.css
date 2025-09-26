@@ -21,7 +21,8 @@
 
 body{
   background: #141414;
-  padding: 2em ;
+  padding: 0 ;
+  margin:0;
   font-family:"Netflix Sans";
   color: white;
   margin: 0;
@@ -30,6 +31,7 @@ body{
 
 .container{
   width: 95%;
+  margin: 0 auto;
 
 }
 
@@ -55,10 +57,11 @@ img{
 
 .nav{
   display: flex;
-  width: 100%;
+  width: 95%;
   gap: 30px;
   align-items: center;
   overflow-x:scroll;
+  margin:0 auto;
 
 }
 
@@ -162,4 +165,42 @@ img{
     grid-template-columns: repeat(4, minmax(50px, 150px));
     grid-template-rows: repeat();
   }
+}
+
+.hero__img{
+  position: relative;
+  background-image: url("./netflix-img/images/AAAABfjFlp2knrovoWG6xA8-iLLO-4bb86YMqJWGhtNWKCdwcuTkYfrLxLi-Rd83YMp4KpzpBvv3_32kFtMclVF8rKCh2v9CZ9DVLc4S.jpg");
+  background-position:50%;
+  background-size: cover;
+  margin: 2em 0;
+  inset: 0;
+  overflow-clip-margin:content-box;
+  overflow: clip;
+  width:100%;
+  padding: 2em;
+}
+
+.img__title{
+  width: 40%;
+  max-width: 400px;
+}
+ 
+.hero__text{
+  max-width: 500px;
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+.btn{
+  margin-top: 2rem;
+  text-decoration-line: none;
+  font-size: 1.5rem;
+  padding: 1em;
+  text-align:center;
+}
+
+.btn__1{
+  color: black;
+  background-color: white;
+
 }
